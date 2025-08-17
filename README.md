@@ -18,7 +18,7 @@ Backend per la gestione di tornei sportivi. Costruito con Node.js ed Express, qu
 
 \- Express
 
-\- MySQL / PostgreSQL
+\- PostgreSQL
 
 \- JWT per autenticazione
 
