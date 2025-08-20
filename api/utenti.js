@@ -6,7 +6,7 @@ const pool = require('../db');
 router.get('/utenti', async (req, res) => {
   try {
     const result = await pool.query(
-      "SELECT id_utenti, nome, email, ruolo FROM TB_utenti"
+      "SELECT id_utenti, nome, email, cod_ruolo FROM TB_utenti"
     );
     res.json(result.rows);
   } catch (err) {
