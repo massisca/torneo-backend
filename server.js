@@ -15,7 +15,7 @@ const utentiRouter = require('./api/utenti');
 
 // ...altre rotte
 app.use('/api/tornei', torneiRouter);
-app.use('/api/login', loginRouter);
+app.use('/api', loginRouter);
 app.use('/api/partite', partiteRouter);
 app.use('/api/utenti', utentiRouter);
 // ...altre rotte
