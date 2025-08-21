@@ -11,13 +11,13 @@ app.use(express.json());
 const torneiRouter = require('./api/tornei');
 const loginRouter = require('./api/login');
 const partiteRouter = require('./api/partite');
-const utentiRouter = require('./api/utenti');
+
 
 // ...altre rotte
 app.use('/api/tornei', torneiRouter);
 app.use('/api', loginRouter);
 app.use('/api/partite', partiteRouter);
-app.use('/api/utenti', utentiRouter);
+
 // ...altre rotte
 
 // Porta dinamica per Render
