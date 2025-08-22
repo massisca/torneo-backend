@@ -11,12 +11,22 @@ app.use(express.json());
 const torneiRouter = require('./api/tornei');
 const loginRouter = require('./api/login');
 const partiteRouter = require('./api/partite');
+const ruoliRouter = require('./routes/ruoli');
+const fasiRouter = require('./routes/fasi');
+const puntiRouter = require('./routes/punti');
+const campiRouter = require('./routes/campi');
+const formuleRouter = require('./routes/formule');
 
 
 // ...altre rotte
 app.use('/api/tornei', torneiRouter);
 app.use('/api', loginRouter);
 app.use('/api/partite', partiteRouter);
+app.use('/api/ruoli', ruoliRouter);
+app.use('/api/fasi', fasiRouter);
+app.use('/api/punti', puntiRouter);
+app.use('/api/campi', campiRouter);
+app.use('/api/formule', formuleRouter);
 
 // ...altre rotte
 
