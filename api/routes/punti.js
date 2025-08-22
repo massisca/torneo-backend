@@ -71,3 +71,4 @@ router.delete('/:id_punti', async (req, res) => {
 });
 
 module.exports = router;
+
